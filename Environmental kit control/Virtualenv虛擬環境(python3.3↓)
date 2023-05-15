@@ -1,0 +1,12 @@
+這是一個第三方套件，在python3.3以下的版本可以用這個建立虛擬環境，否則可用內建的venv
+
+pip install virtualenv
+
+#創建虛擬環境
+virtualenv <env-name>
+virtualenv -p <path-to-python> <env-name>
+
+#啟用
+source <env-name>/bin/activate
+#退出
+deactivate

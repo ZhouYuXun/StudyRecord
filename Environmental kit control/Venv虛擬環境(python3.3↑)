@@ -1,0 +1,16 @@
+在python3.3以上的版本有內建可用的 `venv` 模組來建立虛擬環境。
+
+創建一個目錄，這將是您的虛擬環境的根目錄
+mkdir myenv
+
+進入新建立的目錄，例如
+cd myenv
+
+建立虛擬環境venv
+python3 -m venv venv
+
+激活虛擬環境在Windows系統
+venv\Scripts\activate.bat
+
+退出虛擬環境
+deactivate

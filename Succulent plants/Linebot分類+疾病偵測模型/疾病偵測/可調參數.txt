@@ -1,0 +1,4 @@
+https://docs.ultralytics.com/modes/predict/#sources
+https://docs.ultralytics.com/modes/train/#arguments
+
+可調參數

@@ -1,0 +1,17 @@
+flask
+line-bot-sdk
+google-cloud-logging
+google-cloud-storage
+gunicorn
+google-auth
+google-api-python-client
+six
+pylint
+pymysql
+cryptography
+typing
+pillow
+matplotlib
+torch
+torchvision
+uwsgi

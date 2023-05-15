@@ -1,0 +1,8 @@
+{
+"classjson_path": "/content/drive/MyDrive/model/deep-learning-for-image-processing-master/pytorch_classification/Test6_mobilenet/class_indices.json",
+"root_path": "/content/drive/MyDrive/model/deep-learning-for-image-processing-master",
+"data_set_dir": "data_set",
+"flower_dir": "project_data",
+"weight_path": "/content/drive/MyDrive/model/deep-learning-for-image-processing-master/pytorch_classification/Test6_mobilenet/mobilenet_v3_large.pth",
+"train_save_path": "/content/drive/MyDrive/model/deep-learning-for-image-processing-master/pytorch_classification/Test6_mobilenet/"
+}
