@@ -14,3 +14,6 @@ venv\Scripts\activate
 
 退出虛擬環境
 deactivate
+
+退回目錄
+cd ..
