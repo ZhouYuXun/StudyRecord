@@ -10,7 +10,7 @@ cd myenv
 python3 -m venv venv
 
 激活虛擬環境在Windows系統
-venv\Scripts\activate.bat
+venv\Scripts\activate
 
 退出虛擬環境
 deactivate
