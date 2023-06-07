@@ -16,7 +16,7 @@ pyenv install --list
 安裝所選版本
 pyenv install <version>
 
-確認是否安裝成功
+查看安裝版本，*代表全局版本
 pyenv versions
 
 指定全局版本
