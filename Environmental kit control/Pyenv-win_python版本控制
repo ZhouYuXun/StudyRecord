@@ -1,0 +1,31 @@
+在PowerShell下載並執行安裝命令
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+
+如權限不足則先查看執行策略
+Get-ExecutionPolicy
+
+如為Restricted（限制）則用管理員身分更改權限為允許本地腳本執行
+Set-ExecutionPolicy RemoteSigned
+
+官方建議在此基礎上再將本地所有用戶一起設定執行策略
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+
+安裝完畢查看可用python版本
+pyenv install --list
+
+安裝所選版本
+pyenv install <version>
+
+確認是否安裝成功
+pyenv versions
+
+指定全局版本
+pyenv global <version>
+
+
+創建虛擬環境
+pyenv virtualenv <version> <env_name>
+
+激活虛擬環境pyenv activate myenv1
+
+
