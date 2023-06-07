@@ -22,10 +22,3 @@ pyenv versions
 指定全局版本
 pyenv global <version>
 
-創建虛擬環境
-pyenv virtualenv <version> <env_name>
-
-激活虛擬環境
-pyenv activate <env_name>
-
-
