@@ -22,3 +22,5 @@ pyenv versions
 指定全局版本
 pyenv global <version>
 
+更新pip版本
+python3 -m pip install --upgrade pip
