@@ -1,5 +1,0 @@
-pillow==8.4.0
-matplotlib==3.7.1
-torch==2.0.0+cu118
-torchvision==0.15.1+cu118
-python==3.9.16

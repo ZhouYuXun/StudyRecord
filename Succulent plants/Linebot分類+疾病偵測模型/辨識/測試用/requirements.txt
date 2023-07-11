@@ -1,8 +1,0 @@
-line-bot-sdk
-flask
-pillow
-tensorflow
-uwsgi
-torch
-typing 
-torchvision

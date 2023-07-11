@@ -1,3 +1,0 @@
-img_path = "辨識圖片路徑"
-json_path = 'json路徑'
-model_weight_path = "MobileNetV3.pth權重路徑"
