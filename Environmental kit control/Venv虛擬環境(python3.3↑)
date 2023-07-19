@@ -6,6 +6,9 @@ mkdir myenv
 進入新建立的目錄，例如
 cd myenv
 
+以系統管理員權限執行PowerShell，變更PowerShell執行策略
+Set-ExecutionPolicy RemoteSigned
+
 建立虛擬環境venv
 python3 -m venv venv
 
