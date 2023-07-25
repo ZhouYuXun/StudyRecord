@@ -9,7 +9,7 @@ https://pytorch.org/get-started/locally/
 或查閱CUDA本版相容性
 https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 安裝相應的CUDA版本
-https://developer.nvidia.com/cuda-downloads
+https://developer.nvidia.com/cuda-toolkit-archive
 
 
 檢查cuDNN支援的CUDA與NVDIA驅動版本
