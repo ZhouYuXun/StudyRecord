@@ -1,8 +1,14 @@
-安裝CUDA
+根據顯卡型號安裝NVIDIA驅動程式
+https://www.nvidia.com.tw/Download/index.aspx?lang=tw
+
+檢查顯卡最高可支援的CUDA版本
+nvidia-smi
+
+安裝相應的CUDA版本
 https://developer.nvidia.com/cuda-downloads
 
-檢查CUDA版本
-nvcc -V 或 nvidia-smi
+確認檢查支援的cuDNN與NVDIA版本
+https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html
 
 下載相應版本的cuDNN壓縮檔
 https://developer.nvidia.com/rdp/cudnn-download
@@ -13,7 +19,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1
 到pytorch官方下載GPU版本，如已安裝CPU版本需要先卸載重新安裝
 https://pytorch.org/get-started/locally/
 
-檢查pytorchm3版本與是否順利進行
+檢查pytorch+cuda版本與是否順利進行
 import torch
 print(torch.__version__)
 print(torch.cuda.is_available())
