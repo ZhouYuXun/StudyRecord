@@ -33,6 +33,6 @@ print(torch.cuda.is_available())
 根據tensorflow官方消息
 https://tensorflow.google.cn/install/source_windows?hl=en#gpu
 從此本版後TensorFlow 對 Windows 上的 CUDA 構建不再提供支援。
-Version Python version	Compiler	Build tools	cuDNN	CUDA
+Version	Python version	Compiler	Build tools	cuDNN	CUDA
 tensorflow_gpu-2.10.0	3.7-3.10	MSVC 2019	Bazel 5.1.1	8.1	11.2
 也就是說只能選擇在 WSL2 的 Linux 環境中構建/安裝 TensorFlow，並從那裡使用 GPU 功能。
