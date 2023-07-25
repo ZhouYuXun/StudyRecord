@@ -1,5 +1,19 @@
 激活虛擬環境
 conda activate your_env_name
-
 離開虛擬環境
 conda deactivate
+
+更新conda版本
+conda update conda
+查詢conda版本
+conda --version
+
+檢視環境列表
+conda env list
+切換至指定環境
+conda activate ENV_NAME or activate ENV_NAME
+
+更新所有套件
+conda upgrade -y --all
+檢視目前的環境的套件
+conda list
