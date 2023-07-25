@@ -4,6 +4,9 @@ https://www.nvidia.com.tw/Download/index.aspx?lang=tw
 檢查顯卡最高可支援的CUDA版本
 nvidia-smi
 
+或查閱CUDA本版相容性
+https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+
 安裝相應的CUDA版本
 https://developer.nvidia.com/cuda-downloads
 
@@ -13,8 +16,15 @@ https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html
 下載相應版本的cuDNN壓縮檔
 https://developer.nvidia.com/rdp/cudnn-download
 
+確認是否安裝成功
+ncvv -v
+
 解壓縮cuDNN後將bin、include、lib覆蓋到CUDA資料夾中
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1
+
+檢查tensorflow_gpu與python、CUDA、cuDNN版本相容性
+https://tensorflow.google.cn/install/source_windows?hl=en#gpu
+
 
 到pytorch官方下載GPU版本，如已安裝CPU版本需要先卸載重新安裝
 https://pytorch.org/get-started/locally/
