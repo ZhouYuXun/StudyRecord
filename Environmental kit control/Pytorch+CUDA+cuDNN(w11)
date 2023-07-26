@@ -47,3 +47,5 @@ DirectML 是一個微軟的 DirectX 12 API，用於 GPU 加速機器學習的計
 TensorFlow-DirectML 插件允許 TensorFlow 利用 DirectML 來在 Windows GPU 上運行模型。
 
 測驗可行結果：python3.10.12 + tensorflow2.10.0(cuda11.2), pytorch2.0.1(cuda11.8) + cuda11.8 + cuDNN8.9.3
+
+tensorflow在2.X.X版本以上，已整合CPU+GPU選擇功能。
