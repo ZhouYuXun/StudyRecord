@@ -45,3 +45,5 @@ tensorflow_gpu-2.10.0	3.7-3.10	MSVC 2019	Bazel 5.1.1	8.1	11.2
 其中 tensorflow-cpu 是 TensorFlow 的只用 CPU 的版本。
 DirectML 是一個微軟的 DirectX 12 API，用於 GPU 加速機器學習的計算。
 TensorFlow-DirectML 插件允許 TensorFlow 利用 DirectML 來在 Windows GPU 上運行模型。
+
+測驗可行結果：python3.10.12 + tensorflow2.10.0(cuda11.2), pytorch2.0.1(cuda11.8) + cuda11.8 + cuDNN8.9.3
