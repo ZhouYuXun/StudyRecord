@@ -2,9 +2,7 @@
 https://www.nvidia.com.tw/Download/index.aspx?lang=tw
 
 
-並查看顯示卡與tensorflow或pytorch支援的最高CUDA版本
-nvidia-smi
-https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+並查看顯示卡與tensorflow或pytorch支援的最高CUDA版本 nvidia-smi
 https://tensorflow.google.cn/install/source_windows?hl=en#gpu
 https://pytorch.org/get-started/locally/
 或查閱CUDA本版相容性
