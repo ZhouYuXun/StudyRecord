@@ -20,7 +20,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1
 
 
 確認是否安裝成功
-ncvv -v
+nvcc --version
 
 
 檢查pytorch+cuda版本與是否順利進行
