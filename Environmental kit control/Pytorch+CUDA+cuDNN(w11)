@@ -3,6 +3,7 @@ https://www.nvidia.com.tw/Download/index.aspx?lang=tw
 
 
 並查看顯示卡與tensorflow或pytorch支援的最高CUDA版本 nvidia-smi
+https://developer.nvidia.com/cuda-gpus
 https://tensorflow.google.cn/install/source_windows?hl=en#gpu
 https://pytorch.org/get-started/locally/
 或查閱CUDA本版相容性
@@ -34,6 +35,10 @@ print(torch.cuda.is_available())
 根據tensorflow官方公告
 https://tensorflow.google.cn/install/source_windows?hl=en#gpu
 從此本版後TensorFlow 對 Windows 上的 CUDA 構建不再提供支援。
+
+1.15 以下版本的 CPU 和 GPU 套件各自獨立
+pip install tensorflow==1.15      # CPU
+pip install tensorflow-gpu==1.15  # GPU
 
 Version	Python version	Compiler	Build tools
 tensorflow-2.10.0	3.7-3.10	MSVC 2019	Bazel 5.1.1
