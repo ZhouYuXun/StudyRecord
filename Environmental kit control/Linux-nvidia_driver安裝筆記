@@ -18,7 +18,18 @@ nvidia-smi
 
 PS：如果遇到Linux內建的顯示驅動nouveau與nvidia衝突，就需要先禁用或移除，詳情查閱網路教學
 
+由於docker直接創建會遇到無法獲取GPU的錯誤因此需要安裝nvidia-container-toolkit
 
+檢查是否有安裝nvidia-container-toolkit
+dpkg -l | grep nvidia-container-toolkit
 
+如果沒有安裝則根據官方提供安裝教程安裝nvidia-container-toolkit
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
-sudo docker run -it --name <container name> --network host --mount type=bind,source="$(pwd)",target=$(pwd) -w $(pwd) python:3.10-slim bash
+下載docker官方提供的tensorflow映像檔案
+https://hub.docker.com/r/tensorflow/tensorflow/
+
+docker pull tensorflow/tensorflow會下載最新CPU版本的官方映象檔，如果指定範例為docker pull tensorflow/tensorflow:2.10.0-gpu
+
+建立容器
+sudo docker run -it --name ethan_test --gpus all --network host --mount type=bind,source="$(pwd)",target=$(pwd) -w $(pwd) tensorflow/tensorflow:2.10.0-gpu bash
