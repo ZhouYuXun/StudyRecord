@@ -1,0 +1,24 @@
+使用Linux內建的安裝套件查看目前顯示卡可用的驅動版本
+ubuntu-drivers list
+
+查看推薦安裝的顯示卡驅動版本
+ubuntu-drivers devices
+
+嘗試能否自動安裝推薦的顯示卡驅動版本
+sudo ubuntu-drivers autoinstall
+
+或根據查詢與推薦結果手動決定安裝版本
+sudo apt install nvidia-driver-xxx
+
+安裝完畢重新啟動
+sudo reboot
+
+檢查安裝是否成功
+nvidia-smi
+
+PS：如果遇到Linux內建的顯示驅動nouveau與nvidia衝突，就需要先禁用或移除，詳情查閱網路教學
+
+
+
+
+sudo docker run -it --name <container name> --network host --mount type=bind,source="$(pwd)",target=$(pwd) -w $(pwd) python:3.10-slim bash
