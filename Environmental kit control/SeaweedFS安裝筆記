@@ -1,0 +1,11 @@
+在想要安裝的位置開啟終端機，下載專案
+git clone https://github.com/seaweedfs/seaweedfs.git
+
+確認是否安裝docker
+docker --version
+
+未安裝則連接至網址下載並安裝與執行
+https://www.docker.com/get-started/
+
+開放端口，根據名稱從docker hub下載映像檔，創建一個運行伺服器，支援S3協議API的容器
+docker run -p 8333:8333 chrislusf/seaweedfs server -s3
