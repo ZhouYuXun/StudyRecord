@@ -7,5 +7,12 @@ docker --version
 未安裝則連接至網址下載並安裝與執行
 https://www.docker.com/get-started/
 
-開放端口，根據名稱從docker hub下載映像檔，創建一個運行伺服器，支援S3協議API的容器
-docker run -p 8333:8333 chrislusf/seaweedfs server -s3
+方式一，將伺服器運行於容器中
+
+  開放端口，根據名稱從docker hub下載映像檔，創建一個運行伺服器，支援能夠用接收S3協議指令的容器
+  docker run -p 8333:8333 chrislusf/seaweedfs server -s3
+  
+  由於容器已在運行伺服器，因此需要啟動偽終端（pseudo-TTY）
+  docker exec -it admiring_hopper /bin/sh 
+  
+  由於容器只有映射8333端口，需要在docker容器中
