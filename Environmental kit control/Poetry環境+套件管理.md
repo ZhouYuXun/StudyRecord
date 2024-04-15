@@ -42,6 +42,8 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ## 使用方法
 
+### 開發環境
+
 創建新項目
 ```powershell
 poetry new poetry-demo
@@ -52,53 +54,44 @@ poetry new poetry-demo
 poetry init
 ```
 
-開發環境
+該命令從當前專案中讀取 poetry.lock， 解析依賴項並安裝它，如果不存在該檔案則創建。
+```powershell
+poetry install
+```
+
 安裝套件，這等於pip3 install，而安裝的套件會詳細列在poetry.lock，這等於requirements.txt
+```powershell
 poetry add 套件名稱
+```
 
 列出清單，相當於pip3 list
+```powershell
 poetry show
+```
 
-列出樹狀圖清單，也是此套件管理的亮點
+列出樹狀圖清單
+```powershell
 poetry show --tree
+```
 
 移除套件，當poetry移除時會進行依賴解析，簡單來說可以想像它會根據樹狀圖移除所有相依套件，並且條件是其餘套件都不再依賴它，而pip uninstall只會移除指定套件。
+```powershell
 poetry remove 套件名稱
+```
 
+### 部屬環境
 
-部屬環境
 建立部屬環境的套件清單，可以到pyproject.toml清楚看到
+```powershell
 poetry add 套件名稱 -D
+```
 
-移出清單
+移出清單，相當於pip3 remove
+```powershell
 poetry remove 套件名稱 -D
+```
 
-
-
-輸出Poetry虛擬環境的requirements.txt，如想去除hash值則使用第二行指令
+輸出Poetry虛擬環境的requirements.txt
+```powershell
 poetry export -f requirements.txt --output requirements.txt
-poetry export -f requirements.txt --output requirements.txt --without-hashes
-
-
-
-移除虛擬環境，不知道為什麼會發生錯誤，直接刪除整個專案
-poetry env remove python
-
-移除poetry
-curl -sSL https://install.python-poetry.org | python3 - --uninstall
-
-
-
-沒有找到能夠安裝PytorchGPU版本的方法，直接pip3不納入poetry管理
-https://pytorch.org/get-started/locally/#windows-pip
-
-似乎可行的方案但未經嘗試
-[tool.poetry.dependencies]
-python = "^3.10"
-numpy = "^1.23.2"
-torch = "1.12.1"
-torchvision = "0.13.1"
-
-install_cu116:
-	poetry install
-	poetry run pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 -f https://download.pytorch.org/whl/torch_stable.html
+```
