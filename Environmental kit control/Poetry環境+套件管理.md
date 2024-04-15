@@ -55,6 +55,11 @@ poetry init
 poetry install
 ```
 
+確認當前啟動的虛擬環境的基本資訊
+```powershell
+poetry env info
+```
+
 安裝套件，這等於pip3 install，而安裝的套件會詳細列在poetry.lock，這等於requirements.txt
 ```powershell
 poetry add 套件名稱
