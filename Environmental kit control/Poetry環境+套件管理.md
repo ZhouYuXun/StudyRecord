@@ -7,7 +7,8 @@
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression'''
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+'''
 [更多關於 Scoop 的資訊](https://scoop.sh/)
 
 更新 Scoop 版本
