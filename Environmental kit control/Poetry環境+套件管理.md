@@ -40,17 +40,17 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 # 使用方法一：開發環境
 
-創建新項目
+首先創建新項目
 ```powershell
 poetry new poetry-demo
 ```
 
-如果是已存在的專案，執行 portry 初始化建立 pyproject.toml。
+而如果是已存在的專案，執行 portry 初始化建立 pyproject.toml。
 ```powershell
 poetry init
 ```
 
-該命令從當前專案中讀取 poetry.lock， 解析依賴項並安裝它，如果不存在該檔案則創建。
+接著從當前專案中讀取 poetry.lock， 解析依賴項並安裝它，如果不存在該檔案則創建。
 ```powershell
 poetry install
 ```
