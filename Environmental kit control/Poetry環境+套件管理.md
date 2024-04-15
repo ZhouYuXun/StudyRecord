@@ -28,12 +28,11 @@ pipx ensurepath
 
 ### 步驟三：安裝 poetry
 
+Poetry 是 Python 中用於依賴管理和打包的工具，它允許您聲明您的專案所依賴的庫，並將為您管理（安裝/更新）它們。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-pipx)
+
 ```powershell
 pipx install pipx
 ```
-
-[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-pipx)
-
 
 ## 安裝方法二 ( 備案 )
 
