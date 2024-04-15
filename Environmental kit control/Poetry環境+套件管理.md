@@ -4,7 +4,7 @@
 
 ### 步驟一：安裝 Scoop
 
-這是一個專為 Windows 系統設計的命令行安裝器，避免了傳統安裝方式可能造成的 PATH 環境變量污染，它將所有軟體安裝在用戶的 home 目錄下，保持系統的清潔，用來安裝 pipx。
+這是一個專為 Windows 系統設計的命令行安裝器，避免了傳統安裝方式可能造成的 PATH 環境變量污染，用來安裝 pipx。
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
