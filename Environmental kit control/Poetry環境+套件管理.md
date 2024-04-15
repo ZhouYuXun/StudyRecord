@@ -3,12 +3,14 @@
 ## 安裝方法一（推薦）
 
 ### 步驟 1: 安裝 Scoop
+
 開啟終端機，安裝 Scoop，這是一個專為 Windows 系統設計的命令行安裝器，避免了傳統安裝方式可能造成的 PATH 環境變量污染，它將所有軟體安裝在用戶的 home 目錄下，保持系統的清潔，用來安裝 pipx。
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-'''
+```
+
 [更多關於 Scoop 的資訊](https://scoop.sh/)
 
 更新 Scoop 版本
