@@ -2,27 +2,36 @@
 
 ## 安裝方法一（推薦）
 
-### 步驟 1: 安裝 Scoop
+### 步驟一：安裝 Scoop
 
-開啟終端機，安裝 Scoop，這是一個專為 Windows 系統設計的命令行安裝器，避免了傳統安裝方式可能造成的 PATH 環境變量污染，它將所有軟體安裝在用戶的 home 目錄下，保持系統的清潔，用來安裝 pipx。
+這是一個專為 Windows 系統設計的命令行安裝器，避免了傳統安裝方式可能造成的 PATH 環境變量污染，它將所有軟體安裝在用戶的 home 目錄下，保持系統的清潔，用來安裝 pipx。
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
+更新 Scoop 版本
+```powershell
+scoop update
+```
+
 [更多關於 Scoop 的資訊](https://scoop.sh/)
 
-更新 Scoop 版本
-scoop update
+### 步驟二：安裝 pipx
 
-開啟終端機，安裝 pipx ，用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中。 將用於安裝Poetry時管理升級和卸載。
+用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中。 將用於安裝Poetry時管理升級和卸載。
+
+```powershell
 scoop install pipx
 pipx ensurepath
-參考：https://pipx.pypa.io/stable/installation/
-
+```
+```powershell
 更新 pipx 版本、查看套件、更新套件
 scoop update pipx、pipx list、pipx upgrade-all
+```
+
+[更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
 
 安裝方法二 ( 備案 )
 官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境，更改安裝路徑請參考下方網址。
