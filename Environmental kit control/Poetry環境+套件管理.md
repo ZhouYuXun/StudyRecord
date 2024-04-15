@@ -40,9 +40,7 @@ pipx install pipx
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-## 使用方法
-
-### 開發環境
+## 使用方法一：開發環境
 
 創建新項目
 ```powershell
@@ -79,7 +77,7 @@ poetry show --tree
 poetry remove 套件名稱
 ```
 
-### 部屬環境
+### 使用方法二：部屬環境
 
 建立部屬環境的套件清單，可以到pyproject.toml清楚看到
 ```powershell
