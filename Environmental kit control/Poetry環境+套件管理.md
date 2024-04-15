@@ -15,7 +15,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ### 步驟二：安裝 pipx
 
 用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中，將用於安裝Poetry時管理升級和卸載。[更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
-```powershell
+```powershell 
 scoop install pipx
 ```
 ```powershell
@@ -51,25 +51,6 @@ poetry new poetry-demo
 ```powershell
 poetry init
 ```
-
-設定poetry配置，將虛擬環境安裝在專案中，而不是統一放置虛擬環境
-poetry config virtualenvs.in-project true
-
-
-
-在專案的根目錄執行，產生pyproject.toml設定檔
-poetry init
-
-建立虛擬環境，將會依據剛才設定的pyproject.toml決定環境架構
-poetry env use python
-
-啟動，會偵測當前目錄或所屬上層目錄是否存在pyproject.toml來確定所要啟動的虛擬環境
-poetry shell
-
-退出
-exit
-
-
 
 開發環境
 安裝套件，這等於pip3 install，而安裝的套件會詳細列在poetry.lock，這等於requirements.txt
