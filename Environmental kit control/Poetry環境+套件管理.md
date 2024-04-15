@@ -1,4 +1,4 @@
-## 安裝方法一：使用 pipx （推薦）
+# 安裝方法一：使用 pipx （推薦）
 
 ### 步驟一：安裝 Scoop
 
@@ -27,7 +27,7 @@ Poetry 是 Python 中用於依賴管理和打包的工具，它允許聲明專�
 pipx install pipx
 ```
 
-## 安裝方法二：使用官方安裝程式 ( 不建議 )
+# 安裝方法二：使用官方安裝程式 ( 不建議 )
 
 ### 步驟一：安裝 poetry
 官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-the-official-installer)
@@ -38,7 +38,7 @@ pipx install pipx
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-## 使用方法一：開發環境
+# 使用方法一：開發環境
 
 創建新項目
 ```powershell
@@ -75,7 +75,7 @@ poetry show --tree
 poetry remove 套件名稱
 ```
 
-### 使用方法二：部屬環境
+# 使用方法二：部屬環境
 
 建立部屬環境的套件清單，可以到pyproject.toml清楚看到
 ```powershell
