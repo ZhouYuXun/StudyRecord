@@ -1,15 +1,13 @@
 # 安裝指南
 
-## 安裝方法一（推薦）
+## 安裝方法一：使用 pipx （推薦）
 
 ### 步驟一：安裝 Scoop
 
 這是一個專為 Windows 設計的安裝器，避免了 PATH 環境變量污染，將用於安裝 pipx 時管理升級和卸載。[更多關於 Scoop 的資訊](https://scoop.sh/)
-
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
-
 ```powershell
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
@@ -17,11 +15,9 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ### 步驟二：安裝 pipx
 
 用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中，將用於安裝Poetry時管理升級和卸載。[更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
-
 ```powershell
 scoop install pipx
 ```
-
 ```powershell
 pipx ensurepath
 ```
@@ -29,30 +25,32 @@ pipx ensurepath
 ### 步驟三：安裝 poetry
 
 Poetry 是 Python 中用於依賴管理和打包的工具，它允許聲明專案所依賴的庫，並將為您管理（安裝/更新）它們。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-pipx)
-
 ```powershell
 pipx install pipx
 ```
 
-## 安裝方法二 ( 備案 )
+## 安裝方法二：使用官方安裝程式 ( 不建議 )
 
-### 步驟一：安裝 
-官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境，更改安裝路徑請參考下方網址。
-Linux: curl -sSL https://install.python-poetry.org | python3 -
-windows: (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
-參考：https://python-poetry.org/docs/#installing-with-the-official-installer
+### 步驟一：安裝 poetry
+官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-the-official-installer)
+```windows
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+```
+```Linux
+curl -sSL https://install.python-poetry.org | python3 -
+```
 
-將執行poetry指令執行檔的路經，手動新增至使用者環境變數的PATH (W11)，以下為參考路徑，請依實際個人實際情況更改。
-C:\Users\btea4\AppData\Roaming\Python\Scripts
+## 使用方法
 
-確認是否安裝成功
-poetry --version
+創建新項目
+```powershell
+poetry new poetry-demo
+```
 
-更新
-poetry update
-
-查看配置清單
-poetry config --list
+初始化專案
+```powershell
+poetry init
+```
 
 設定poetry配置，將虛擬環境安裝在專案中，而不是統一放置虛擬環境
 poetry config virtualenvs.in-project true
