@@ -20,15 +20,11 @@ scoop update
 
 ### 步驟二：安裝 pipx
 
-用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中。 將用於安裝Poetry時管理升級和卸載。
+用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中。 將用於安裝Poetry時管理升級和卸載。更新 pipx 'scoop update pipx'、查看套件 'pipx list'、更新套件 'pipx upgrade-all'
 
 ```powershell
 scoop install pipx
 pipx ensurepath
-```
-```powershell
-更新 pipx 版本、查看套件、更新套件
-scoop update pipx、pipx list、pipx upgrade-all
 ```
 
 [更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
