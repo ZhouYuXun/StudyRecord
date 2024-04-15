@@ -8,6 +8,9 @@
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+```powershell
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
@@ -24,6 +27,9 @@ scoop update
 
 ```powershell
 scoop install pipx
+```
+
+```powershell
 pipx ensurepath
 ```
 
