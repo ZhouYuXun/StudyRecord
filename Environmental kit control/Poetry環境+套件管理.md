@@ -14,11 +14,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-更新 Scoop 版本
-```powershell
-scoop update
-```
-
 [更多關於 Scoop 的資訊](https://scoop.sh/)
 
 ### 步驟二：安裝 pipx
