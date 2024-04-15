@@ -47,7 +47,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 poetry new poetry-demo
 ```
 
-初始化專案
+如果是已存在的專案，執行 portry 初始化建立 pyproject.toml。
 ```powershell
 poetry init
 ```
