@@ -4,7 +4,7 @@
 
 ### 步驟一：安裝 Scoop
 
-這是一個專為 Windows 設計的安裝器，避免了 PATH 環境變量污染，將用於安裝 pipx 時管理升級和卸載。
+這是一個專為 Windows 設計的安裝器，避免了 PATH 環境變量污染，將用於安裝 pipx 時管理升級和卸載。[更多關於 Scoop 的資訊](https://scoop.sh/)
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -14,11 +14,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-[更多關於 Scoop 的資訊](https://scoop.sh/)
-
 ### 步驟二：安裝 pipx
 
-用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中，將用於安裝Poetry時管理升級和卸載。
+用於全域安裝 Python CLI 應用程式，同時仍將它們隔離在虛擬環境中，將用於安裝Poetry時管理升級和卸載。[更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
 
 ```powershell
 scoop install pipx
@@ -27,8 +25,6 @@ scoop install pipx
 ```powershell
 pipx ensurepath
 ```
-
-[更多關於 pipx 的資訊](https://pipx.pypa.io/stable/installation/)
 
 ### 步驟三：安裝 poetry
 
