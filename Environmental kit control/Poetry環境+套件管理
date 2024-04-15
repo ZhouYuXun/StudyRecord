@@ -17,12 +17,12 @@ pipx ensurepath
 scoop update pipx、pipx list、pipx upgrade-all
 
 安裝方法二 ( 備案 )
-官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境。
+官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境，更改安裝路徑請參考下方網址。
 Linux: curl -sSL https://install.python-poetry.org | python3 -
 windows: (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 參考：https://python-poetry.org/docs/#installing-with-the-official-installer
 
-將執行poetry指令執行檔的路經，手動新增至使用者環境變數的PATH (W11)
+將執行poetry指令執行檔的路經，手動新增至使用者環境變數的PATH (W11)，以下為參考路徑，請依實際個人實際情況更改。
 C:\Users\btea4\AppData\Roaming\Python\Scripts
 
 確認是否安裝成功
