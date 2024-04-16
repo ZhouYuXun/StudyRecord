@@ -31,10 +31,13 @@ pipx install poetry
 
 ### 步驟一：安裝 poetry
 官方提供了一個自定義安裝程式，可以在新的虛擬環境中安裝 Poetry 並允許Poetry管理自己的環境。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-the-official-installer)
-```windows
+
+#### Windows
+```
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 ```
-```Linux
+#### Linux
+```
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
