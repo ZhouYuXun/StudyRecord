@@ -24,7 +24,7 @@ pipx ensurepath
 
 Poetry 是 Python 中用於依賴管理和打包的工具，它允許聲明專案所依賴的庫，並將為您管理（安裝/更新）它們。[更多關於 poetry 的資訊](https://python-poetry.org/docs/#installing-with-pipx)
 ```powershell
-pipx install pipx
+pipx install poetry
 ```
 
 # 安裝方法二：使用官方安裝程式 ( 不建議 )
